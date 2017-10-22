@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+# boards/views.py
+from django.shortcuts import render
+from .models import Board
 
 def home(request):
-    return HttpResponse('Hello, World!')
+    boards = Board.objects.all()
+    return render(request, 'home.html', {'boards': boards})
