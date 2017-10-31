@@ -22,4 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
     url(r'^imperialgrande$', views.igrande, name='igrande'),
+    url(r'^thesun$', views.thesun, name='thesun'),
+    url(r'^qwf$', views.qwf, name='qwf'),
+    url(r'^buildingprogress$', views.bprogress, name='bprogress'),
 ]

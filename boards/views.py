@@ -8,3 +8,12 @@ def home(request):
     
 def igrande(request):
     return render(request, 'igrande.html')
+    
+def thesun(request):
+    return render(request, 'thesun.html')
+
+def qwf(request):
+    return render(request, 'qwf.html')
+    
+def bprogress(request):
+    return render(request, 'bprogress.html')
